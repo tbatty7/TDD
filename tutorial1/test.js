@@ -14,6 +14,10 @@ describe("Calculating Prime Factors Tests", function(){
 				expect(PrimeFactors.of(2)).to.be.an('array').that.includes(2);
 			});
 
+			it('It should give the prime factor of 3 for 3', ()=>{
+				expect(PrimeFactors.of(3)).to.be.an('array').that.includes(3);
+			});
+
 
 		});
 	});

@@ -1,8 +1,8 @@
 var PrimeFactors = function() {};
 
 PrimeFactors.prototype.of = function(n) {
-	if (n===2){
-		return [2];
+	if (n > 1){
+		return [n];
 	}
 	return [];
 };
