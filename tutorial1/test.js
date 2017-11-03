@@ -9,9 +9,12 @@ describe("Calculating Prime Factors Tests", function(){
 			it('It should give the prime factor of null for 1', ()=>{
 				expect(PrimeFactors.of(1)).to.be.an('array').that.is.empty;
 			});
+
 			it('It should give the prime factor of 2 for 2', ()=>{
-				expect(PrimeFactors.of(1)).to.equal([2]);
+				expect(PrimeFactors.of(2)).to.be.an('array').that.includes(2);
 			});
+
+
 		});
 	});
 
