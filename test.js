@@ -1,5 +1,5 @@
 var Name = require('./app.js');
-var expect = require('chai').expect;
+const expect = require('chai').expect;
 
 describe('first test', function(){
 	it('It should return my name', function(){
