@@ -18,6 +18,10 @@ describe("Calculating Prime Factors Tests", function(){
 				expect(PrimeFactors.of(3)).to.be.an('array').that.includes(3);
 			});
 
+			it('It should give the prime factors of [2,2] for 4', ()=>{
+				expect(PrimeFactors.of(4)).to.have.members([2,2]);
+			});
+
 
 		});
 	});
