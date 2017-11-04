@@ -22,6 +22,22 @@ describe("Calculating Prime Factors Tests", function(){
 				expect(PrimeFactors.of(4)).to.have.members([2,2]);
 			});
 
+			it('It should give the prime factors of [5] for 5', ()=>{
+				expect(PrimeFactors.of(5)).to.have.members([5]);
+			});
+
+			it('It should give the prime factors of [2,3] for 6', ()=>{
+				expect(PrimeFactors.of(6)).to.have.members([2,3]);
+			});
+
+			it('It should give the prime factors of [7] for 7', ()=>{
+				expect(PrimeFactors.of(7)).to.have.members([7]);
+			});
+
+			it('It should give the prime factors of [2,2,2] for 8', ()=>{
+				expect(PrimeFactors.of(8)).to.have.members([2, 2, 2]);
+			});
+
 
 		});
 	});
