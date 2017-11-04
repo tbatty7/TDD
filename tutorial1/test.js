@@ -38,6 +38,10 @@ describe("Calculating Prime Factors Tests", function(){
 				expect(PrimeFactors.of(8)).to.have.members([2, 2, 2]);
 			});
 
+			it('It should give the prime factors of [3,3] for 9', ()=>{
+				expect(PrimeFactors.of(9)).to.have.members([3, 3]);
+			});
+
 
 		});
 	});
