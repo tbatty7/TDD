@@ -17,6 +17,10 @@ describe('Roman Numeral Converter', ()=>{
 				expect(romanNumerals.fromNumber(3)).to.equal('III');
 			});
 
+			it('should give the Numeral "IV" for 4', ()=>{
+				expect(romanNumerals.fromNumber(4)).to.equal('IV');
+			});
+
 		});
 
 	});
