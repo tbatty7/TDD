@@ -13,6 +13,10 @@ describe("FizzBuzz", ()=>{
 				expect(fizzBuzz.fizzBuzz(2)).to.equal(2);
 			});
 
+			it('should return "Fizz" when a multiple of 3 is entered', ()=>{
+				expect(fizzBuzz.fizzBuzz(3)).to.equal("Fizz");
+			});
+
 		});
 
 	});
