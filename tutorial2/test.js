@@ -25,6 +25,10 @@ describe('Roman Numeral Converter', ()=>{
 				expect(romanNumerals.fromNumber(5)).to.equal('V');
 			});
 
+			it('should give the Numeral "MCMXCVII" for 1997', ()=>{
+				expect(romanNumerals.fromNumber(1997)).to.equal('MCMXCVII');
+			});
+
 		});
 
 	});
