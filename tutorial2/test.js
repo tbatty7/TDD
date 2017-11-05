@@ -13,6 +13,10 @@ describe('Roman Numeral Converter', ()=>{
 				expect(romanNumerals.fromNumber(2)).to.equal('II');
 			});
 
+			it('should give the Numeral "III" for 3', ()=>{
+				expect(romanNumerals.fromNumber(3)).to.equal('III');
+			});
+
 		});
 
 	});
