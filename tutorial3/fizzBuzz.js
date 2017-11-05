@@ -1,8 +1,10 @@
 var app = function(){};
 
 app.prototype.fizzBuzz = function(num){
-	if (0 === num % 3){
+	if (num % 3 === 0){
 		return "Fizz";
+	} else if (num % 5 === 0){
+		return "Buzz";
 	}
 	return num;
 };
