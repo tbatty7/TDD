@@ -1,16 +1,30 @@
 var RomanNumerals = function(){};
 
-let numerals = [
-	{number: 4, numeral: "IV"},
-	{number: 1, numeral: "I"},
+var Numeral = function(value, numeral){
+	return {number: value, numeral: numeral};
+};
+
+var numerals = [
+	Numeral(1000, "M"),
+	Numeral(900, "CM"),
+	Numeral(500, "D"),
+	Numeral(400, "CD"),
+	Numeral(100, "C"),
+	Numeral(90, "XC"),
+	Numeral(50, "L"),
+	Numeral(40, "XL"),
+	Numeral(10, "X"),
+	Numeral(9, "IX"),
+	Numeral(5, "V"),
+	Numeral(4, "IV"),
+	Numeral(1, "I")
 ];
 
 RomanNumerals.prototype.fromNumber = function(num){
-	let result = "";
+	var result = "";
 	numerals.forEach(function(item){
-		while (num >= item.number){
+		for (; num >= item.number; num -= item.number){
 			result += item.numeral;
-			num -= item.number;
 		}
 	});
 	return result;

@@ -21,6 +21,10 @@ describe('Roman Numeral Converter', ()=>{
 				expect(romanNumerals.fromNumber(4)).to.equal('IV');
 			});
 
+			it('should give the Numeral "V" for 5', ()=>{
+				expect(romanNumerals.fromNumber(5)).to.equal('V');
+			});
+
 		});
 
 	});
